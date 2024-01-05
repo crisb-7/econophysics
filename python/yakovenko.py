@@ -17,27 +17,30 @@ N = 1000    # Population (N agents)
 M = 1e5     # Total sum of money in the system
 C = 50      # Number of income classes
 
-# Maximum amount of money an agent can have
+# Max amount of money an agent can have
 MMAX = (M/(np.sum(np.arange(C))*(N/C))*C)*2
 
 CLASS = np.linspace(0, MMAX, C)
-T = 1000        
-Ci = len(CLASS)
+T = 1000    # Total time of the simulation
+
+# Delta amount of money
 dm = M*4e-5
-lambda_ = 0
-tau = 30
-a = 1/300
 
 bin_centers = 0.5*(CLASS[1:] + CLASS[0:-1])
-Mk_vec = np.linspace(0, MMAX, N)
 
+# Tax
+lambda_ = 0
+tau = 30
 iva = 0
-delta_distrib = np.ones((N,))*(M/N)
-Sdelta = np.zeros((T,))
 
+# Well-being
+a = 1/300
 OcaD = [None]*T
 OcbD = [None]*T
 B = [None]*T
+
+delta_distrib = np.ones((N,))*(M/N)
+Sdelta = np.zeros((T,))
 
 # TODO: verify correctness - code runs without errors
 
