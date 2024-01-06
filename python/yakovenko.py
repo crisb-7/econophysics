@@ -3,19 +3,6 @@ import random
 import numpy as np
 from plotting import plot_entropy, plot_money_hist
 
-# Physics
-# TODO: verify correctness
-
-# SE
-# TODO: modularize to use delta/uniform initial distribution
-# TODO: revise for performance (speed + memory)
-# TODO: add readme description of constants
-
-# Both
-# TODO: rethink design - implement well-being & tax 
-# TODO: develop tests + test code
-# TODO: develop a visualization module 
-
 def main(args):
     N_AGENTS = args.population     # Population (N agents) 
     TOTAL_MONEY = args.total_money    # Total sum of money in the system
