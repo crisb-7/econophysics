@@ -4,21 +4,27 @@ This repository explores and reconstructs Victor Yakovenko's and Ian Wright's st
 
 ## To-do list
 
-### Physics
+### Models
 
-- [ ] verify correctness
+- [x] Yakovenko Python Model
+- [ ] Verify Yakovenko model correctness
+- [ ] Implement tax on Yakovenko Model
+- [ ] Wright Python Model
+- [ ] Implement well-being analysis
 
-### SE
+### Dev
 
-- [ ] modularize to use delta/uniform initial distribution
-- [ ] revise for performance (speed + memory)
-- [ ] add readme description of constants
+- [ ] Modularize to use delta/uniform initial distribution
+- [ ] Proper package usage
+- [ ] Interface for proper Git development (main/branch + PRs)
+- [ ] Write unit tests
+- [ ] Add README description of constants
+- [ ] Benchmark & optimize performance (speed + memory)
+- [ ] Develop a visualization module 
 
-### Both
+### Design
 
-- [ ] rethink design - implement well-being & tax 
-- [ ] develop tests + test code
-- [ ] develop a visualization module 
+- [ ] Rethink design (tax & well-being)
 
 ## Yakovenko's Statistical Mechanics Model
 
